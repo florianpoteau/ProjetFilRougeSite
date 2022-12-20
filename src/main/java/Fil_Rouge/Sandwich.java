@@ -7,10 +7,14 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 @Entity
 @Table ( name = "produit")
 
  class Sandwich implements Serializable{
+	
+	@Autowired
 	
 	private static final long serialVersionUID = 1L;
 	

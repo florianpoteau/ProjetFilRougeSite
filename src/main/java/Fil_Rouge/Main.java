@@ -6,9 +6,3 @@ public class Main {
 			DateReservation.dateAchat(2);
 	}
 }
-		
-		
-	
-	
-
-

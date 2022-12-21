@@ -16,7 +16,7 @@ mapped to database tables. Database driver, location, userid and pw
         <!-- Define the class for Hibernate which implements JPA -->
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <!-- Define the object that should be persisted in the database -->
-        <class>Fil_Rouge.Sandwich</class>
+        <class>Fil_Rouge.Sandwich</class>        
         <properties>
             <!-- Driver for DB database -->
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
@@ -25,7 +25,7 @@ mapped to database tables. Database driver, location, userid and pw
             <!-- Username -->
             <property name="javax.persistence.jdbc.user" value="postgres" />
             <!-- Password -->
-            <property name="javax.persistence.jdbc.password" value="Beuvrages59" />
+            <property name="javax.persistence.jdbc.password" value="Amir" />
         </properties>
     </persistence-unit>
 </persistence>

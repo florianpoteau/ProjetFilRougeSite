@@ -7,14 +7,10 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 @Entity
 @Table ( name = "produit")
 
  class Sandwich implements Serializable{
-	
-	@Autowired
 	
 	private static final long serialVersionUID = 1L;
 	
@@ -34,6 +30,20 @@ import org.springframework.beans.factory.annotation.Autowired;
 	@Column ( name = "produit2", nullable = false)
 	private String produit2;
 	
+	/**
+	 * @return the quantité
+	 */
+	public float getQuantité() {
+		return quantité;
+	}
+
+	/**
+	 * @param quantité the quantité to set
+	 */
+	public void setQuantité(float quantité) {
+		this.quantité = quantité;
+	}
+
 	@Column ( name = "produit3", nullable = false)
 	private String produit3;
 	
@@ -45,6 +55,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 	
 	@Column (name = "prix", nullable = false)
 	private float prix;
+	
+	@Column (name = "quantité", nullable = false)
+	private float quantité;
 
 	/**
 	 * @return the id
